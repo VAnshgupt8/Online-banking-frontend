@@ -3,15 +3,15 @@ import { Navigate, useNavigate, Outlet } from 'react-router-dom';
 import { Breadcrumb, Layout, Menu, Button } from 'antd';
 import CustomerHandling from './EmployeePortalPages/CustomerHandling';
 import AccountHandling from './EmployeePortalPages/AccountHandling';
-import LoanHandling from './EmployeePortalPages/LoanHandling';
-import WithdrawalHandling from './EmployeePortalPages/WithdrawalHandling';
-import DepositHandling from './EmployeePortalPages/DepositHandling';
+// import LoanHandling from './EmployeePortalPages/LoanHandling';
+// import WithdrawalHandling from './EmployeePortalPages/WithdrawalHandling';
+// import DepositHandling from './EmployeePortalPages/DepositHandling';
 import { customerLogout } from '../api/auth';
 import Logo from './Images/Logo2.png';
 import './PageStyling/EmployeeHome.css';
-import ManagerReports from './EmployeePortalPages/ManagerReportsHandling';
+// import ManagerReports from './EmployeePortalPages/ManagerReportsHandling';
 import EmployeeHandling from './EmployeePortalPages/EmployeeHandling';
-import TransactionHandling from './EmployeePortalPages/TransactionHandling';
+// import TransactionHandling from './EmployeePortalPages/TransactionHandling';
 
 const { Header, Content, Footer } = Layout;
 
@@ -32,12 +32,12 @@ export default function EmployeeHome() {
   const [items, setItems] = useState([
     getItem('Customer', '0', <CustomerHandling />),
     getItem('Account', '1', <AccountHandling />),
-    getItem('Loan', '2', <LoanHandling role={role} />),
-    getItem('Withdrawal', '3', <WithdrawalHandling />),
-    getItem('Deposit', '4', <DepositHandling />),
-    getItem('Transaction', '5', <TransactionHandling />),
+    // getItem('Loan', '2', <LoanHandling role={role} />),
+    // getItem('Withdrawal', '3', <WithdrawalHandling />),
+    // getItem('Deposit', '4', <DepositHandling />),
+    // getItem('Transaction', '5', <TransactionHandling />),
     getItem('Employee', '6', <EmployeeHandling />, true),
-    getItem('Reports', '7', <ManagerReports />, true),
+    // getItem('Reports', '7', <ManagerReports />, true),
   ]);
 
   useEffect(() => {
